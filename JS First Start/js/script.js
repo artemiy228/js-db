@@ -61,7 +61,7 @@ showMyDB(personalMovieDB.privat);
 
 function writeYourGenres() {
 	for (let i = 1; i <= 3; i++) {
-		personalMovieDB.gentres[i - 1] = prompt(`Вашь любимый жанр под номером: ${i}`, '');
+		personalMovieDB.gentres[i - 1] = prompt(`Ваш любимый жанр под номером: ${i}`, '');
 	}
 }
 
@@ -72,7 +72,19 @@ function writeYourGenres() {
 
 
 
+function test(age, callback) {
+	console.log(`Мне - ${age}`);
+	callback();
+}
 
+function call() {
+	console.log(`Я лох`);
+}
+test("28", call);
+
+// test("28", function () {
+// 	console.log(`Я лох`);
+// });
 
 
 
